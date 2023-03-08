@@ -1,0 +1,26 @@
+
+
+#myDiv{
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  text-align: center;
+}
+#myDiv > span {
+  display: inline-block;
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+}
+#myDiv > span:hover{
+  cursor:pointer;
+}
+/* .rating > span:hover:before, */
+#myDiv > span#yellow:hover ~ span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-color: white;
+  opacity: .25;
+  width: 10rem;
+  height: 10rem;
+}
